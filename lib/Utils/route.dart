@@ -1,5 +1,6 @@
 import 'package:artisanoga/AllScreens/UndefinedScreen.dart';
 import 'package:artisanoga/AllScreens/authentication/login.dart';
+import 'package:artisanoga/AllScreens/authentication/registration.dart';
 import 'package:artisanoga/AllScreens/detailscreen.dart';
 import 'package:artisanoga/AllScreens/mainscreen.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +14,9 @@ class RouteGenerator{
 
       case "login":
         return MaterialPageRoute(builder: (_) => LoginScreen());
+
+      case "register":
+        return MaterialPageRoute(builder: (_) => RegistrationScreen());
     case "DETAIL_ROUTE":
       return MaterialPageRoute(builder: (_) => DetailScreen());
     default:
